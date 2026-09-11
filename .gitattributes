@@ -1,0 +1,7 @@
+# Strip notebook outputs/metadata on commit, restore on checkout.
+# Requires the filter command defs in local git config:
+#   uv run nbstripout --install --attributes .gitattributes
+*.ipynb filter=nbstripout
+
+*.zpln filter=nbstripout
+*.ipynb diff=ipynb

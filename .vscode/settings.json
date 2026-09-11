@@ -1,0 +1,24 @@
+{
+    "jupyter.jupyterLaunchArgs": [
+        "--config=${workspaceFolder}/.jupyter/jupyter_server_config.py"
+    ],
+    "notebook.env": {
+        "JUPYTER_CONFIG_DIR": "${workspaceFolder}/.jupyter"
+    },
+    "ruff.nativeServer": "on",
+    "ruff.importStrategy": "fromEnvironment",
+    "notebook.defaultFormatter": "charliermarsh.ruff",
+    "notebook.formatOnSave.enabled": true,
+    "notebook.codeActionsOnSave": {
+        "source.organizeImports.ruff": "explicit",
+        "source.fixAll.ruff": "explicit"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports.ruff": "explicit",
+            "source.fixAll.ruff": "explicit"
+        }
+    }
+}
