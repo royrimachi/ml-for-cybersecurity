@@ -1,0 +1,41 @@
+[project]
+name = "ml-for-cybersecurity"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Roy Rimachi", email = "rj.rimachi@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "jupyter>=1.1.1",
+    "jupytext>=1.19.5",
+    "matplotlib>=3.11.1",
+    "nbstripout",
+    "numpy>=2.5.3",
+    "pandas>=3.0.5",
+    "pandas-stubs~=3.0.5",
+    "scikit-learn>=1.9.1",
+    "torch>=2.14.0",
+]
+
+[project.scripts]
+ml-for-cybersecurity = "ml_for_cybersecurity:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.workspace]
+members = [
+    ".",
+]
+
+[tool.uv.sources]
+ml-for-cybersecurity = { workspace = true }
+
+[dependency-groups]
+dev = [
+    "ml-for-cybersecurity",
+]

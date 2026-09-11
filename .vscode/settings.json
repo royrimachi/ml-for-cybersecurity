@@ -1,0 +1,8 @@
+{
+    "jupyter.jupyterLaunchArgs": [
+        "--config=${workspaceFolder}/.jupyter/jupyter_server_config.py"
+    ],
+    "notebook.env": {
+        "JUPYTER_CONFIG_DIR": "${workspaceFolder}/.jupyter"
+    }
+}
